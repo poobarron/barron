@@ -22,16 +22,32 @@ public class MString {
 		int numero2 = (int) d;
 		return !(numero2==d);
 	}
-	public boolean es_primo(int numero){
+	public boolean es_primo(double numero){
 		if (numero<2)
 			return false;
 		if (es_decimal(numero))
 			return false;
-		for (int i=2;i<numero;i++){
+		for (int i=2;i<numero;i++)
 			if (!(es_decimal((double)numero/i)))
 				return false;
-			
-		}
 		return true;
 	}
+	public String numero_a_letras(int numero){
+		if (numero<-1&& numero>11)
+		 return "numero invalido";
+		switch (numero){
+		case 0: return "cero";
+		case 1: return "uno";
+		case 2: return "dos";
+		case 3: return "tres";
+		case 4: return "cuatro";
+		case 5: return "cinco";
+		case 6: return "seis";
+		case 7: return "siete";
+		case 8: return "ocho";
+		case 9: return "nueve";
+		default: return "diez";
+		}
+	}
+	
 }

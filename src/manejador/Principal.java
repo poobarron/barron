@@ -11,6 +11,7 @@ public class Principal {
 		System.out.println("es par?:" + obj.es_par(2));
 		System.out.println("es decimal?:" + obj.es_decimal(2.0));
 		System.out.println("es primo?:" + obj.es_primo(7));
+		System.out.println(obj.numero_a_letras(10));
 	}
 
 }
