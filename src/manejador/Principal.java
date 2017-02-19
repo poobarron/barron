@@ -9,6 +9,8 @@ public class Principal {
 		System.out.println("numero de digitos:" + obj.cantidad_de_digitos("anita lava la tina 1234567890 /"));
 		System.out.println("es par?:" + obj.es_par(10));
 		System.out.println("es par?:" + obj.es_par(2));
+		System.out.println("es decimal?:" + obj.es_decimal(2.0));
+		System.out.println("es primo?:" + obj.es_primo(7));
 	}
 
 }
