@@ -9,4 +9,13 @@ public class MString {
 		}
 		return repeticiones; 
 	}
+	public int cantidad_de_digitos(String cadena){
+		int repeticiones=0;
+		for(int  i=0;i<cadena.length();i++){
+			if (cadena.charAt(i)<='9'&&cadena.charAt(i)>='0')
+				repeticiones++;
+		}
+		return repeticiones; 
+	}
+	
 }
