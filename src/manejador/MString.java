@@ -1,5 +1,7 @@
 package manejador;
 
+import java.util.ArrayList;
+
 public class MString {
 	public int numero_de_incidencias(String cadena, char caracter){
 		int repeticiones=0;
@@ -50,4 +52,27 @@ public class MString {
 		}
 	}
 	
+	public int calcular_decenas(int val){
+		if (val<0||val>99){
+			System.out.println("Valores fuera de rango");
+			return -1;
+		}
+		return (int) val/10; 
+	}
+	public boolean es_palindromo(String val){
+		String cad2="";
+		val = val.replaceAll(" ", "");
+		for (int x=0 ;x<val.length();x++ )
+			cad2 = cad2 + val.charAt(val.length()-x-1);
+		return val.compareToIgnoreCase(cad2)==0;
+	}
+	public ArrayList<Integer> obtener_divisores(int val){
+		ArrayList<Integer> arreglo = new ArrayList<Integer>();
+		for (int i=1;i<=val;i++)
+			if (!(es_decimal((double)val/i))){
+				arreglo.add(i);
+				System.out.println(i);
+			}
+		return arreglo;
+	}
 }

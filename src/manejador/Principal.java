@@ -12,6 +12,10 @@ public class Principal {
 		System.out.println("es decimal?:" + obj.es_decimal(2.0));
 		System.out.println("es primo?:" + obj.es_primo(7));
 		System.out.println(obj.numero_a_letras(10));
+		System.out.println("numero de decenas:" + obj.calcular_decenas(-66));
+		System.out.println("palindromo:" + obj.es_palindromo("anita lava la tina"));
+		System.out.println("palindromo:" + obj.obtener_divisores(7));
+		
 	}
 
 }
